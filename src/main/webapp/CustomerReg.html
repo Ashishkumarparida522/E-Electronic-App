@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Registration</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f7f9fc;
+    }
+
+    .registration-container {
+        background: #ffffff;
+        padding: 1.5rem;
+        width: 360px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .registration-container h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 1.5rem;
+    }
+
+    .input-group {
+        margin-bottom: 0.8rem;
+    }
+
+    .input-label {
+        display: block;
+        margin-bottom: 0.3rem;
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        color: #333;
+        transition: border-color 0.2s;
+    }
+
+    .input-field:focus {
+        border-color: #667eea;
+        outline: none;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background: #667eea;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 1rem;
+    }
+
+    .submit-button:hover {
+        background: #5a67d8;
+    }
+</style>
+</head>
+<body>
+
+<div class="registration-container">
+    <h2>Register</h2>
+    <form action="register" method="POST">
+        <div class="input-group">
+            <label for="name" class="input-label">Name</label>
+            <input type="text" id="name" name="name" class="input-field" maxlength="10" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="password" class="input-label">Password</label>
+            <input type="password" id="password" name="password" class="input-field" maxlength="15" required>
+        </div>
+
+        <div class="input-group">
+            <label for="fname" class="input-label">First Name</label>
+            <input type="text" id="fname" name="fname" class="input-field" maxlength="10" required>
+        </div>
+
+        <div class="input-group">
+            <label for="lname" class="input-label">Last Name</label>
+            <input type="text" id="lname" name="lname" class="input-field" maxlength="15" required>
+        </div>
+
+        <div class="input-group">
+            <label for="address" class="input-label">Address</label>
+            <input type="text" id="address" name="address" class="input-field" maxlength="20" required>
+        </div>
+
+        <div class="input-group">
+            <label for="mid" class="input-label">Email ID</label>
+            <input type="text" id="mid" name="mid" class="input-field" required>
+        </div>
+
+        <div class="input-group">
+            <label for="phone" class="input-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="input-field" maxlength="10" required pattern="[0-9]{10}">
+        </div>
+
+        <button type="submit" class="submit-button">Register</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electronics Store - Landing Page</title>
+<style>
+    /* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    /* Header */
+    .header {
+       background: linear-gradient(90deg, #5b86e5, #36d1dc);
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    /* Navigation */
+    .nav {
+        display: flex;
+        justify-content: center;
+        background-color:#333333;
+        padding: 0.5rem;
+    }
+    .nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        transition: background 0.3s ease;
+    }
+    .nav a:hover {
+        background-color: #007bff;
+    }
+    /* Main Content */
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+    .login-box {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 2rem;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .login-box:hover {
+        transform: scale(1.05);
+    }
+    .login-box h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .login-box a {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+    .login-box a:hover {
+        background-color: #0056b3;
+    }
+    /* Demo Menu Sections */
+    .sections {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .section {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1.5rem;
+        width: 300px;
+        text-align: center;
+        margin: 1rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+    .section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>Welcome to the Electronics Store</h1>
+    <p>Your one-stop shop for all things tech!</p>
+</div>
+
+<!-- Navigation Menu -->
+<div class="nav">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+    <a href="#">About Us</a>
+    <a href="#">Support</a>
+</div>
+
+<!-- Main Container -->
+<div class="container">
+    <!-- Admin Login Box -->
+    <div class="login-box">
+        <h2>Admin Login</h2>
+        <a href="AdminLogin.html">Login as Admin</a>
+    </div>
+
+    <!-- Customer Login Box -->
+    <div class="login-box">
+        <h2>Customer Login</h2>
+        <a href="CustomerLogin.html">Login as Customer</a>
+    </div>
+</div>
+
+<!-- Product Sections -->
+<div class="sections">
+    <!-- Product 1 -->
+    <div class="section">
+        <img src="https://img.freepik.com/premium-photo/choose-mobile-phone-row-different-smartphones-blue-background-3d_505080-171.jpg?w=740" alt="Smartphone">
+        <h3>Smartphones</h3>
+        <p>Latest models from top brands.</p>
+    </div>
+    
+    <!-- Product 2 -->
+    <div class="section">
+        <img src="https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?t=st=1731000817~exp=1731004417~hmac=1e713ecec422fe177a527ef43fc0ad4f0068696ad1b1d866779acc85d1a08c4d&w=826" alt="Laptop">
+        <h3>Laptops</h3>
+        <p>High-performance laptops for work and play.</p>
+    </div>
+    
+    <!-- Product 3 -->
+    <div class="section">
+        <img src="https://img.freepik.com/free-photo/modern-man-tech-collection-wooden-desk-headphones-sunglasses-smartphone-generated-by-ai_24640-92923.jpg?t=st=1731000947~exp=1731004547~hmac=031f7dff70ede152b22720080e1d396ee46c0503910dee29a646de8d8c33f81a&w=996" alt="Headphones">
+        <h3>Accessories</h3>
+        <p>Find the perfect accessories for your devices.</p>
+    </div>
+    
+    <!-- Product 4 -->
+    <div class="section">
+        <img src="https://img.freepik.com/premium-photo/details-camera-reflex_22736-1024.jpg?w=826" alt="Camera">
+        <h3>Cameras</h3>
+        <p>Capture every moment with the best cameras.</p>
+    </div>
+</div>
+
+</body>
+</html>

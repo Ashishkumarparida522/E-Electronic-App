@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Login</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+    }
+
+    .login-container {
+        background: #ffffff;
+        padding: 2rem;
+        width: 350px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .login-container h2 {
+        margin-bottom: 1.5rem;
+        color: #4a4a4a;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .input-field:focus {
+        border-color: #6e8efb;
+        outline: none;
+        box-shadow: 0 0 5px rgba(110, 142, 251, 0.3);
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: #6e8efb;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .submit-button:hover {
+        background: #5769d6;
+    }
+
+    .register-link {
+        display: block;
+        margin-top: 1rem;
+        color: #6e8efb;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .register-link:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Customer Login</h2>
+    <form action="clogin" method="POST">
+        <input type="text" name="name" class="input-field" placeholder="Enter your name" required>
+        <input type="password" name="password" class="input-field" placeholder="Enter your password" required>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+    <a href="CustomerReg.html" class="register-link">New User? Register Here</a>
+</div>
+
+</body>
+</html>
